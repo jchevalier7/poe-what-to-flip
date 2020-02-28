@@ -36,6 +36,219 @@ export const comparisons = () => {
       },
     ],
     "Divination cards vs. outcome": [
+    {
+	    name: "The Samurai's Eye (Watcher's Eye)",
+	    base: ["Watcher's Eye"],
+	    compare: [
+	    	"The Samurai's Eye",
+		"The Samurai's Eye",
+		"The Samurai's Eye"
+	    ]
+    },
+    {
+	    name: "The Iron Bard (Trash to Treasure)",
+	    base: ["Trash to Treasure"],
+	    compare: [
+	    	"The Iron Bard",
+		"The Iron Bard",
+		"The Iron Bard",
+		"The Iron Bard",
+		"The Iron Bard",
+		"The Iron Bard",
+		"The Iron Bard",
+		"The Iron Bard",
+		"The Iron Bard"
+	    ]
+    },
+    {
+	    name: "Pride Of The First Ones (Farrul's Fur)",
+	    base: ["Farrul's Fur"],
+	    compare: [
+		"Pride of the First Ones",
+		"Pride of the First Ones",
+		"Pride of the First Ones",
+		"Pride of the First Ones",
+		"Pride of the First Ones",
+		"Pride of the First Ones",
+		"Pride of the First Ones"
+	    ]
+    },
+    {
+	    name: "Immortal Resolve (Fated Connections)",
+	    base: ["Fated Connections"],
+	    compare: [
+	    	"Immortal Resolve",
+		"Immortal Resolve",
+		"Immortal Resolve",
+		"Immortal Resolve",
+		"Immortal Resolve",
+		"Immortal Resolve"
+	    ]
+    },
+    {
+	    name: "The Price of Loyalty (Skin of the Loyal, Double-Implicit Corrupted)",
+	    base: ["Skin of the Loyal"],
+	    compare: [
+		"The Price of Loyalty",
+		"The Price of Loyalty",
+		"The Price of Loyalty",
+		"The Price of Loyalty"
+	    ]
+    },
+    {
+	    name: "The Damned (Soul Ripper)",
+	    base: ["Soul Ripper"],
+	    compare: [
+	    	"The Damned",
+		"The Damned",
+		"The Damned",
+		"The Damned",
+		"The Damned",
+		"The Damned"
+	    ]
+    },
+    {
+	    name: "The Spark and the Flame (Berek's Respite)",
+	    base: ["Berek's Respite"],
+	    compare: [
+	    	"The Spark and the Flame",
+		"The Spark and the Flame"
+	    ]
+    },
+    {
+	    name: "The Dragon's Heart (Empower Level 4)",
+	    base: [ "empower-support-4", "empower-support", "Empower", "Empower Support", "Empower Support 4", "Enlighten"],
+	    compare: [
+	    	"The Dragon's Heart",
+		"The Dragon's Heart",
+		"The Dragon's Heart",
+		"The Dragon's Heart",
+		"The Dragon's Heart",
+		"The Dragon's Heart",
+		"The Dragon's Heart",
+		"The Dragon's Heart",
+		"The Dragon's Heart",
+		"The Dragon's Heart",
+		"The Dragon's Heart"
+	    ]
+    },
+    {
+	    name: "Seven Years Bad Luck (Mirror Shard)",
+	    base: ["Mirror Shard"],
+	    compare: [
+	    	"Seven Years Bad Luck",
+		"Seven Years Bad Luck",
+		"Seven Years Bad Luck",
+		"Seven Years Bad Luck",
+		"Seven Years Bad Luck",
+		"Seven Years Bad Luck",
+		"Seven Years Bad Luck",
+		"Seven Years Bad Luck",
+		"Seven Years Bad Luck",
+		"Seven Years Bad Luck",
+		"Seven Years Bad Luck",
+		"Seven Years Bad Luck",
+		"Seven Years Bad Luck"
+	    ]
+    },
+    {
+	    name: "The Nurse (The Doctor)",
+	    base: ["The Doctor"],
+	    compare: [
+	    	"The Nurse",
+		"The Nurse",
+		"The Nurse",
+		"The Nurse",
+	    	"The Nurse",
+		"The Nurse",
+		"The Nurse",
+		"The Nurse"
+	    ]
+    },
+    {
+        name: "House of Mirrors (Mirror of Kalandra)",
+        base: ["Mirror of Kalandra"],
+        compare: [
+          "House of Mirrors",
+          "House of Mirrors",
+          "House of Mirrors",
+          "House of Mirrors",
+          "House of Mirrors",
+          "House of Mirrors",
+          "House of Mirrors",
+          "House of Mirrors",
+          "House of Mirrors"
+        ]
+      },
+      {
+	      name: "The Doctor (Headhunter)",
+	      base: ["Headhunter"],
+	      compare: [
+	      	"The Doctor",
+		"The Doctor",
+		"The Doctor",
+		"The Doctor",
+		"The Doctor",
+		"The Doctor",
+		"The Doctor",
+		"The Doctor"
+	      ]
+      },
+      {
+	      name: "The Demon (Headhunter Double-Implicit Corrupted)",
+	      base: ["Headhunter"],
+	      compare: [
+	      	"The Demon",
+		"The Demon",
+		"The Demon",
+		"The Demon",
+		"The Demon",
+		"The Demon",
+		"The Demon",
+		"The Demon",
+		"The Demon",
+		"The Demon"
+	      ]
+      },
+      {
+	      name: "The Immortal (House of Mirrors)",
+	      base: ["House of Mirrors"],
+	      compare: [
+	      	"The Immortal",
+		"The Immortal",
+		"The Immortal",
+		"The Immortal",
+		"The Immortal",
+		"The Immortal",
+		"The Immortal",
+		"The Immortal",
+		"The Immortal",
+		"The Immortal"
+	      ]
+      },
+      {
+	      name: "Beauty Through Death (Queen's Sacrifice)",
+	      base: ["The Queen's Sacrifice"],
+	      compare: [
+	      	"Beauty Through Death",
+		"Beauty Through Death",
+		"Beauty Through Death",
+		"Beauty Through Death",
+		"Beauty Through Death"
+	      ]
+      },
+      {
+	      name: "Succor of the Sinless (Bottled Faith)",
+	      base: ["Bottled Faith"],
+	      compare: [
+	      	"Succor of the Sinless",
+		"Succor of the Sinless",
+		"Succor of the Sinless",
+		"Succor of the Sinless",
+		"Succor of the Sinless",
+		"Succor of the Sinless"
+	      ]
+      },
       {
         name: "The Hoarder (Exalted Orb)",
         base: ["Exalted Orb"],
@@ -63,6 +276,19 @@ export const comparisons = () => {
           "Abandoned Wealth",
           "Abandoned Wealth",
           "Abandoned Wealth",
+        ],
+      },
+      {
+        name: "Alluring Bounty (10x Exalted Orb)",
+        base: ["Exalted Orb", "Exalted Orb", "Exalted Orb", "Exalted Orb", "Exalted Orb", "Exalted Orb", "Exalted Orb", "Exalted Orb", "Exalted Orb", "Exalted Orb"],
+        compare: [
+          "Alluring Bounty",
+	  "Alluring Bounty",
+	  "Alluring Bounty",
+	  "Alluring Bounty",
+	  "Alluring Bounty",
+	  "Alluring Bounty",
+	  "Alluring Bounty"
         ],
       },
       {

@@ -10,25 +10,28 @@ export const Comparisons = ({ selectedLeague }) => {
     	<div className="row">
 		<div className="col-10">
 			{Object.keys(comparisonsByGroup).map(group => (
-			<table id="example" key={group} className="table table-striped tabled-bordered" cellSpacing="0" width="100%">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Profit</th>
-						<th>Cost</th>
-						<th>Comment</th>
-					</tr>
-				</thead>
-				<tbody>
-					  {comparisonsByGroup[group].map((comparison, i) => (
-					      <Comparison
-						selectedLeague={selectedLeague}
-						comparison={comparison}
-					      />
-					  ))}
-				</tbody>
-			</table>
-		      ))}
+			<div>
+				<h2>{group}</h2>
+				<table id="example" key={group} className="table table-striped tabled-bordered" cellSpacing="0" width="100%">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Profit</th>
+							<th>Cost</th>
+							<th>Comment</th>
+						</tr>
+					</thead>
+					<tbody>
+						  {comparisonsByGroup[group].map((comparison, i) => (
+						      <Comparison
+							selectedLeague={selectedLeague}
+							comparison={comparison}
+						      />
+						  ))}
+					</tbody>
+				</table>
+			</div>
+			))}
 	      </div>
       </div>
   );
