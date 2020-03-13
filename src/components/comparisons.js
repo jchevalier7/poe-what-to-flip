@@ -19,6 +19,7 @@ export const Comparisons = ({ selectedLeague }) => {
 							<th>Profit</th>
 							<th>Cost</th>
 							<th>Comment</th>
+							<th>Ratio</th>
 						</tr>
 					</thead>
 					<tbody>

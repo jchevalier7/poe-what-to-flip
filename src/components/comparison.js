@@ -28,9 +28,9 @@ export const Comparison = ({ selectedLeague, comparison }) =>
 
 		let text;
 		if (pieces === 0) {
-			text = "";
+			text = "0";
 		} else if (items.some(item => !isDefined(item))) {
-			text = "N/A";
+			text = "0";
 		} else {
 			text = `${cost(items)}`;
 		}
@@ -39,18 +39,20 @@ export const Comparison = ({ selectedLeague, comparison }) =>
 	};
 
 	const ComparisonText = () => {
-		let comparison_object =
+		const comparison_object =
 		{
 			"name": `${comparison.name}:`,
 			"profit": `${useCompareText(comparison.base, comparison.compare)}`,
 			"cost": useCostText(comparison.compare),
-			"comment": `${comparison.comment}`
+			"comment": `${comparison.comment}`,
 		};
-		if (isNaN(comparison_object.profit))
-			comparison_object.profit = parseInt(0);
-		if (isNaN(comparison_object.cost) || comparison_object.cost === "" || comparison_object === undefined)
-			comparison_object.cost = parseInt(0);
-		let text = <tr><td>{comparison_object.name}</td><td>{comparison_object.profit}</td><td>{comparison_object.cost}</td><td>{comparison_object.comment}</td></tr>;
+		const ratio = Math.round((comparison_object.profit /
+			comparison_object.cost) * 100) / 100;
+		const text = <tr><td>{comparison_object.name}</td>
+			<td>{comparison_object.profit}</td><td>{comparison_object.cost}</td>
+				<td>{comparison_object.comment}</td>
+					<td>{ratio}</td></tr>;
+
 		return (text);
 	};
 

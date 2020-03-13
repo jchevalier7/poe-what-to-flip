@@ -117,7 +117,7 @@ export const comparisons = () => {
     },
     {
 	    name: "The Dragon's Heart (Empower Level 4)",
-	    base: [ "empower-support-4", "empower-support", "Empower", "Empower Support", "Empower Support 4", "Enlighten"],
+	    base: [ "empower-support-4"],
 	    compare: [
 	    	"The Dragon's Heart",
 		"The Dragon's Heart",
