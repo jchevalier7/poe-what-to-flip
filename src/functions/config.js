@@ -117,7 +117,7 @@ export const comparisons = () => {
     },
     {
 	    name: "The Dragon's Heart (Empower Level 4)",
-	    base: [ "empower-support-4"],
+	    base: [ "empower-support-4c"],
 	    compare: [
 	    	"The Dragon's Heart",
 		"The Dragon's Heart",
@@ -728,77 +728,77 @@ export const comparisons = () => {
       {
         name: "Apep's Supremacy",
         base: ["Apep's Supremacy"],
-        compare: ["Apep's Slumber"],
+        compare: ["Apep's Slumber", "Vial of Awakening"],
         comment:
           "Vial of Awakening: https://www.pathofexile.com/trade/search/Metamorph/KYVR6Ri5",
       },
       {
         name: "Slavedriver's Hand",
         base: ["Slavedriver's Hand"],
-        compare: ["Architect's Hand"],
+        compare: ["Architect's Hand", "Vial of Dominance"],
         comment:
           "Vial of Dominance: https://www.pathofexile.com/trade/search/Metamorph/q2Ew93Cg",
       },
       {
         name: "Mask of the Stitched Demon",
         base: ["Mask of the Stitched Demon"],
-        compare: ["Mask of the Spirit Drinker"],
+        compare: ["Mask of the Spirit Drinker", "Vial of Summoning"],
         comment:
           "Vial of Summoning: https://www.pathofexile.com/trade/search/Metamorph/mZprJJH6",
       },
       {
         name: "Coward's Legacy",
         base: ["Coward's Legacy"],
-        compare: ["Coward's Chains"],
+        compare: ["Coward's Chains", "Vial of Consequence"],
         comment:
           "Vial of Consequence: https://www.pathofexile.com/trade/search/Metamorph/REManrf7",
       },
       {
         name: "Fate of the Vaal",
         base: ["Fate of the Vaal"],
-        compare: ["Story of the Vaal"],
+        compare: ["Story of the Vaal", "Vial of Fate"],
         comment:
           "Vial of Fate: https://www.pathofexile.com/trade/search/Metamorph/ak4Q2pte",
       },
       {
         name: "Omeyocan",
         base: ["Omeyocan"],
-        compare: ["Dance of the Offered"],
+        compare: ["Dance of the Offered", "Vial of the Ritual"],
         comment:
           "Vial of the Ritual: https://www.pathofexile.com/trade/search/Metamorph/9d9Wk4uK",
       },
       {
         name: "Zerphi's Heart",
         base: ["Zerphi's Heart"],
-        compare: ["Sacrificial Heart"],
+        compare: ["Sacrificial Heart", "Vial of Sacrifice"],
         comment:
           "Vial of Sacrifice: https://www.pathofexile.com/trade/search/Metamorph/pY25JWi0",
       },
       {
         name: "Soul Ripper",
         base: ["Soul Ripper"],
-        compare: ["Soul Catcher"],
+        compare: ["Soul Catcher", "Vial of the Ghost"],
         comment:
           "Vial of the Ghost: https://www.pathofexile.com/trade/search/Metamorph/rGdy0gHQ",
       },
       {
         name: "Transcendent Flesh",
         base: ["Transcendent Flesh"],
-        compare: ["Tempered Flesh"],
+        compare: ["Tempered Flesh", "Vial of Transcendence"],
         comment:
           "Vial of Transcendence: https://www.pathofexile.com/trade/search/Metamorph/Q34bbRuw",
       },
       {
         name: "Transcendent Mind",
         base: ["Transcendent Mind"],
-        compare: ["Tempered Mind"],
+        compare: ["Tempered Mind", "Vial of Transcendence"],
         comment:
           "Vial of Transcendence: https://www.pathofexile.com/trade/search/Metamorph/Q34bbRuw",
       },
       {
         name: "Transcendent Spirit",
         base: ["Transcendent Spirit"],
-        compare: ["Tempered Spirit"],
+        compare: ["Tempered Spirit", "Vial of Transcendence"],
         comment:
           "Vial of Transcendence: https://www.pathofexile.com/trade/search/Metamorph/Q34bbRuw",
       },
