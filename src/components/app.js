@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>The Grand Arbitrer</h1>
+      <h1>PoE - What to flip?</h1>
       <select
         name="league"
         value={selectedMetaLeague}
