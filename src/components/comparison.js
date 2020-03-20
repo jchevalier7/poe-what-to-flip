@@ -4,59 +4,62 @@ import { comparePrice, cost } from "../functions/compareItems";
 import { useFindItems } from "../contexts/items";
 import { isDefined } from "../functions/utils";
 
-export const Comparison = ({ selectedLeague, comparison }) => {
-  const useCompareText = (baseNames, compareNames) => {
-    const baseItems = useFindItems(selectedLeague, baseNames);
-    const compareItems = useFindItems(selectedLeague, compareNames);
+export const Comparison = ({ selectedLeague, comparison }) =>
+{
 
-    let text;
+	const useCompareText = (baseNames, compareNames) => {
+		const baseItems = useFindItems(selectedLeague, baseNames);
+		const compareItems = useFindItems(selectedLeague, compareNames);
 
-    if (baseItems.concat(compareItems).some(item => !isDefined(item))) {
-      text = "N/A";
-    } else {
-      text = comparePrice(baseItems, compareItems);
-    }
+		let text;
 
-    return text;
-  };
+		if (baseItems.concat(compareItems).some(item => !isDefined(item))) {
+			text = "N/A";
+		} else {
+			text = comparePrice(baseItems, compareItems);
+		}
 
-  const useCostText = names => {
-    const pieces = names.length;
-    const items = useFindItems(selectedLeague, names);
+		return text;
+	};
 
-    let text;
-    if (pieces === 0) {
-      text = "";
-    } else if (items.some(item => !isDefined(item))) {
-      text = "N/A";
-    } else {
-      text = `, cost: ${cost(items)} chaos, pieces: ${pieces}`;
-    }
+	const useCostText = names => {
+		const pieces = names.length;
+		const items = useFindItems(selectedLeague, names);
 
-    return text;
-  };
+		let text;
+		if (pieces === 0) {
+			text = "0";
+		} else if (items.some(item => !isDefined(item))) {
+			text = "0";
+		} else {
+			text = `${cost(items)}`;
+		}
 
-  const ComparisonText = () => {
-    let text = `${comparison.name}: `;
+		return parseInt(text);
+	};
 
-    text += `${useCompareText(
-      comparison.base,
-      comparison.compare
-    )} chaos profit`;
+	const ComparisonText = () => {
+		const comparison_object =
+		{
+			"name": `${comparison.name}:`,
+			"profit": `${useCompareText(comparison.base, comparison.compare)}`,
+			"cost": useCostText(comparison.compare),
+			"comment": `${comparison.comment}`,
+		};
+		const ratio = Math.round((comparison_object.profit /
+			comparison_object.cost) * 100) / 100;
+		const text = <tr><td>{comparison_object.name}</td>
+			<td>{comparison_object.profit}</td><td>{comparison_object.cost}</td>
+				<td>{comparison_object.comment}</td>
+					<td>{ratio}</td></tr>;
 
-    text += useCostText(comparison.compare);
+		return (text);
+	};
 
-    if (comparison.comment) {
-      text += ` (${comparison.comment})`;
-    }
-
-    return text;
-  };
-
-  return <label>{ComparisonText()}</label>;
+	return ComparisonText();
 };
 
 Comparison.propTypes = {
-  comparison: PropTypes.object,
-  selectedLeague: PropTypes.string,
+comparison: PropTypes.object,
+	    selectedLeague: PropTypes.string,
 };

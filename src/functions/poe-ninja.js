@@ -71,6 +71,16 @@ export const typeConfigByCategory = () => {
         name_key: "name",
         compare_key: "chaosValue",
       },
+	  vials: {
+		type: "Vial",
+		name_key: "name",
+		compare_key: "chaosValue",
+	  },
+	  skill_gems: {
+		type: "SkillGem",
+		name_key: "name",
+		compare_key: "chaosValue",
+	  },
     },
   };
 };

@@ -54,7 +54,7 @@ export const useSelectedLeague = () => {
     });
   }, []);
 
-  const [selectedMetaLeague, setSelectedMetaLeague] = useState("Temp SC");
+  const [selectedMetaLeague, setSelectedMetaLeague] = useState("Standard");
 
   const [selectedLeague, setSelectedLeague] = useState();
   useEffect(() => {
